@@ -18,7 +18,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap" async defer></script>
     <link rel="stylesheet" href="static/css/vicaf.css">
 </head>
-<body>
+<body class="">
     <header class="fixed-header bg-stone-500 text-white w-full shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -124,38 +124,113 @@
             </div>
         </div>
     </header>
-    <div id="servicios" class="mx-auto max-w-7xl sm:px-6  py-4 lg:px-8 mb-4">
-        <p class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl  text-center">Nuestros Servicios</p>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
-          <div class="card lg:max-w-sm bg-white lg:rounded-lg shadow-lg overflow-hidden mb-4">
-            <img class="w-full h-80" src="../static/img/c_calidad_obra.jpeg" alt="Image Description">
-            <div class="px-6 py-4">
-              <div class="text-sm lg:text-md">Control de Calidad en Obra</div>
+    <div class="content w-full w-full bg-stone-50 py-12">
+      <h3 class="text-center text-xl py-2 font-bold mb-2">Nuestros Servicios</h3>
+      <div class="mx-auto max-w-7xl px-6 py-6 rounded-lg bg-gray-50">
+       <div class=" grid grid-cols-1 lg:grid-cols-7 shadow-lg gap-4 bg-gray-50 rounded-lg">
+          <div class="col-span-2">
+            <div class="px-2 py-2 w-full rounded-lg ">
+              <h1 class="font-semibold text-sm lg:text-lg">Control de calidad de obra</h1>
             </div>
-            <div class="px-6 p-2">
-              <a href=""><span class="inline-block bg-stone-300 hover:bg-amber-300 hover:text-gray-800 rounded-full px-3 py-1 text-xs lg:text-sm  text-blue-950 mr-2 mb-2">Descripción</span></a>
+            <div class="px-2">
+              <p class="text-xs py-2 text-justify">
+                Garantizamos que los proyectos se completen de manera satisfactoria y cumplan con los estándares de calidad requeridos.
+              </p>
+              <div class="text-xs shadow-xl bg-blue-50  rounded-lg border-b-2 py-4 mt-4 px-1">
+                <div class="flex">
+                  <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <p class="px-2">Densidad mediante el cono y la arena</p></div>
+                <div class="flex">
+                  <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <p class="px-2">Contenido de humedad (SPEEDY) (mín. 4 puntos)</p></div>
+                <div class="flex">
+                  <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <p class="px-2">Medición de asentamiento del concreto con el cono de Abrams </p></div>
+                <div class="flex">
+                  <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <p class="px-2">Medición de la temperatura del concreto fresco </p></div>
+                <div class="flex">
+                  <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <p class="px-2">Toma de muestra de concreto </p></div>
+              </div>
             </div>
           </div>
-          <div class="card lg:max-w-sm bg-white lg:rounded-lg shadow-lg overflow-hidden mb-4">
-            <img class="w-full h-80" src="../static/img/e_mecanica_suelos.jpeg" alt="Image Description">
-            <div class="px-6 py-4">
-              <div class="text-sm lg:text-md">Estudio de Mecánica de Suelos</div>
-            </div>
-            <div class="px-6 p-4">
-              <a href=""><span class="inline-block bg-stone-300 hover:bg-amber-300 hover:text-gray-800 rounded-full px-3 py-1 text-xs lg:text-sm text-blue-950 mr-2 mb-2">Descripción</span></a>
-            </div>
+          <div class="col-span-5 grid grid-cols-1 lg:grid-cols-2 gap-1 h-full w-full">
+              <div class="col-span-1 aspect-[2/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/CC-1.jpeg" alt=""></div>
+              <div class="col-span-1 aspect-[2/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/CC-2.jpeg" alt=""></div>
+              <div class="col-span-1 aspect-[2/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/CC-3.jpeg" alt=""></div>
+              <div class="col-span-1 aspect-[2/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/CC-4.jpeg" alt=""></div>
           </div>
-          <div class="card lg:max-w-sm bg-white lg:rounded-lg shadow-lg overflow-hidden mb-4">
-            <img class="w-full h-80" src="../static/img/e_estructural.jpeg" alt="Image Description">
-            <div class="px-6 py-4">
-              <div class="text-sm lg:text-md">Evaluación Estructural</div>
-            </div>
-            <div class="px-6 p-2">
-              <a href=""><span class="inline-block bg-stone-300 hover:bg-amber-300 hover:text-gray-800 rounded-full px-3 py-1 text-xs text-sm  text-blue-950 mr-2 mb-2">Descripción</span></a>
-            </div>
-          </div>
+       </div>
+      </div>
+      <div class="mx-auto mt-4 max-w-7xl px-6 py-6 rounded-lg bg-gray-50">
+        <div class=" grid grid-cols-1 lg:grid-cols-7 shadow-lg gap-4 bg-gray-50 rounded-lg">
+           <div class="col-span-2">
+             <div class="px-2 py-2 w-full rounded-lg ">
+               <h1 class="font-semibold text-sm lg:text-lg">Estudio de mecánica de suelos</h1>
+             </div>
+             <div class="px-2 shadow-lg rounded-lg bg-gray-100">
+               <div class="text-xs py-2 text-justify">
+                <div class="flex">   
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                    </svg>
+                  </div> 
+                  <div>
+                    <p class="px-2">Optimización de diseño y costos de Cimentación</p>
+                  </div>                                                                                                  
+                </div>
+               </div>
+               <div class="text-xs py-2 text-justify">
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                    </svg> 
+                  </div>                                                                                      
+                  <div>
+                    <p class="px-2">Previsión de problemas de cimentación por suelos perjudiciales</p>
+                  </div>           
+                </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-span-5 grid grid-cols-1 lg:grid-cols-3 gap-1 h-full w-full">
+               <div class="col-span-1 aspect-[3/4]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/EMS-1.jpg" alt=""></div>
+               <div class="col-span-1 aspect-[3/4]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/EMS-2.jpg" alt=""></div>
+               <div class="col-span-1 aspect-[3/4]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/EMS-3.jpg" alt=""></div>
+           </div>
         </div>
-    </div> 
+      </div>
+      <div class="mx-auto mt-4 max-w-7xl px-6 py-6 rounded-lg bg-gray-50">
+        <div class=" grid grid-cols-1 lg:grid-cols-7 shadow-lg gap-4 bg-gray-50 rounded-lg">
+           <div class="col-span-2">
+             <div class="px-2 py-2 w-full rounded-lg ">
+               <h1 class="font-semibold text-sm lg:text-lg">Estudio de canteras</h1>
+             </div>
+             <div class="px-2 shadow-lg rounded-lg bg-gray-100">
+               <div class="text-xs py-2 text-justify">
+                <div class="flex"> 
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                    </svg> 
+                  </div>  
+                  <div>
+                    <p class="px-2">Analizamos los materiales en base a las especificaciones de tu proyecto y en base a normas estandarizadas</p>
+                  </div>                                                                                                    
+                </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-span-5 grid grid-row-1 lg:grid-rows-2 gap-1 h-full w-full">
+               <div class="aspect-[4/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/EC-1.jpg" alt=""></div>
+               <div class="aspect-[4/1]"><img class="w-full rounded-lg px-2 py-2 h-full object-cover" src="../static/img/EC-2.jpg" alt=""></div>
+           </div>
+        </div>
+      </div>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="static/js/vicaf.js"></script>
