@@ -30,3 +30,20 @@
     color: white;
     background-color: #1e3a8a; /* Tailwind color for blue-950 */
 }
+
+.carousel img {
+    filter: brightness(0.7);
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}
+
+.modal {
+    display: none;
+}
+.modal.active {
+    display: flex;
+}
