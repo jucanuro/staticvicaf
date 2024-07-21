@@ -69,6 +69,10 @@ const menuToggle = document.getElementById('menu-toggle');
                 });
             });
         });
+
+        function redirectToServicePage(url) {
+            window.location.href = url;
+        }
     
     
 
