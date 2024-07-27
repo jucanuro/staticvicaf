@@ -58,3 +58,52 @@
     transition: transform 0.3s ease;
 }
 
+.card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: white; /* Cambia este color según tus necesidades */
+    transform: rotate(45deg) translate(35px, -35px);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .card-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .header-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .rolled-paper {
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .rolled-paper::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
