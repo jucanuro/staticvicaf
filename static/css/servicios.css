@@ -1,0 +1,10 @@
+.selected-card {
+  border-left: 4px solid rgb(31, 40, 201);
+  background:gray-linear-gradient(0,2,4);
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
