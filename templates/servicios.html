@@ -1,210 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout with Cards</title>
+    <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/staticvicaf/static/css/servicios.css">
 </head>
-<body class="font-sans antialiased bg-gray-100">
+<body class="flex h-screen bg-gray-100">
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 h-screen">
-        <!-- Left Column (Cards) -->
-        <div class="col-span-1 bg-white p-4 overflow-y-auto h-full">
-            <div id="card-1" class="card selected-card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-1">
-                <h2 class="text-md font-semibold text-blue-900">Control de calidad en obra</h2>
-                <p class="text-gray-600 text-sm text-justify">
-                  Garantizamos que los proyectos se 
-                  completen de manera satisfactoria y cumplan con los estándares de calidad requeridos.
-                </p>
+    <!-- Menú Lateral -->
+    <aside class="w-1/4 bg-gradient-to-b from-gray-300 to-blue-200 p-4 shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Nuestros Servicios</h2>
+        <ul id="menu" class="space-y-2">
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Control de calidad en obra</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Estudio de mecánica de suelos</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Estudio de canteras</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Evaluación estructural</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Diseño de mezclas para concreto</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos de laboratorio</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos químicos</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos de campo</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Monitoreo ambiental</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Equipos</li>
+        </ul>
+    </aside>
+
+    <!-- Contenedor del Carrusel -->
+    <main class="flex-1 p-4">
+        <div id="carousel" class="relative h-full w-full bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="images" class="flex transition-transform duration-300">
+                <!-- Imágenes dinámicas, a continuación debes agregar las imágenes adecuadas -->
+                <img src="/staticvicaf/static/img/img1.jpeg" alt="Imagen 1" class="carousel-image w-full h-full object-cover">
+                <img src="/staticvicaf/static/img/img2.jpeg" alt="Imagen 2" class="carousel-image w-full h-full object-cover hidden">
+                <img src="/staticvicaf/static/img/img3.jpeg" alt="Imagen 3" class="carousel-image w-full h-full object-cover hidden">
+                <img src="/staticvicaf/static/img/img4.jpeg" alt="Imagen 4" class="carousel-image w-full h-full object-cover hidden">
             </div>
-            <div id="card-2" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-2">
-              <h2 class="text-md font-semibold text-blue-900">Estudio de mecánica de suelos</h2>
-              <div class="text-gray-600 text-sm text-justify">
-               <div class="flex mt-2">
-                  <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                  <p class="ml-2">Optimización de diseño y costos de Cimentación.</p>
-                </div>
-                <div class="flex mt-2">
-                  <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                  <p class="ml-2">
-                    Previsión de posibles problemas de cimentación a causa de suelos perjudiciales.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="card-3" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-3">
-              <h2 class="text-md font-semibold text-blue-900">Estudio de canteras</h2>
-              <p class="text-gray-600 text-sm text-justify">
-                Analizamos los materiales en base a las especificaciones de tu proyecto y en base a normas estandarizadas.  
-              </p>
-            </div>
-            <div id="card-4" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-4">
-              <h2 class="text-md font-semibold text-blue-900">Evaluación estructural</h2>
-              <div class="text-gray-600 text-sm text-justify">
-                <div class="flex mt-2">
-                   <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                   <p class="ml-2">
-                    Analizamos la integridad, estabilidad y seguridad de las estructuras construidas. 
-                   </p>
-                 </div>
-                 <div class="flex mt-2">
-                   <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                   <p class="ml-2">
-                    Identificamos posibles daños, evaluación del estado actual y recomendamos medidas correctivas.
-                   </p>
-                 </div>
-               </div>
-            </div>
-            <div id="card-5" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-5">
-              <h2 class="text-md font-semibold text-blue-900">Diseño de mezclas para concreto</h2>
-              <div class="text-gray-600 text-sm text-justify">
-                <div class="flex mt-2">
-                   <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                   <p class="ml-2">
-                    Cumplimiento en base a especificaciones técnicas de los proyectos. 
-                   </p>
-                 </div>
-                 <div class="flex mt-2">
-                   <svg class="w-3 h-3 fill-yellow-600 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/></svg>
-                   <p class="ml-2">
-                     Ajuste de cantidad de materiales utilizados para lograr un rendimiento óptimo.
-                   </p>
-                 </div>
-               </div>
-            </div>
-            <div id="card-6" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-6">
-              <h2 class="text-md font-semibold text-blue-900">Ensayos de laboratorio</h2>
-              <p class="text-gray-600 text-sm text-justify">
-                Trabajamos bajo el cumplimiento de los requisitos de la Norma ISO/IEC 17025.
-              </p>
-            </div>
-            <div id="card-7" class="card shadow-md py-1 px-2 mb-4 rounded-lg cursor-pointer hover:border hover:border-yellow-600" data-info="info-7">
-              <h2 class="text-md font-semibold text-blue-900">Ensayos químicos</h2>
-              <p class="text-gray-600 text-sm text-justify">
-                Trabajamos bajo el cumplimiento de los requisitos de la Norma ISO/IEC 17025.
-              </p>
-            </div>
-            <!-- Add more cards as needed -->
+            <button id="prev" class="absolute text-sm left-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full w-8 h-8">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>            </button>
+            <button id="next" class="absolute text-sm right-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+            </button>
+            <button id="openModal" class="absolute top-4 right-4 bg-blue-600 text-white p-2 rounded-lg">Descripción</button>
         </div>
-        <!-- Right Column (Card Info) -->
-        <div id="card-info" class="col-span-2 bg-white p-2 overflow-y-auto">
-            <div id="info-1" class="card-info">
-                <h2 class="text-xl hidden font-bold">Information for Card 1</h2>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div class="carousel relative" data-index="0">
-                    <img src="/staticvicaf/static/img/CC-1.jpeg" alt="Image 1">
-                    <img src="/staticvicaf/static/img/CC-2.jpeg" alt="Image 2" class="hidden">
-                    <img src="/staticvicaf/static/img/CC-3.jpeg" alt="Image 3" class="hidden">
-                    <img src="/staticvicaf/static/img/CC-4.jpeg" alt="Image 4" class="hidden">
-                  </div>
-                  <div class="p-4">
-                    <h2 class="text-lg font-bold">Control de calidad en obra</h2>
-                  </div>
-                </div>
-            </div>
-            <div id="info-2" class="card-info hidden">
-                <h2 class="text-xl hidden font-bold">Information for Card 2</h2>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div class="carousel relative" data-index="0">
-                    <img src="/staticvicaf/static/img/EMS-1.jpg" alt="Image 1">
-                    <img src="/staticvicaf/static/img/EMS-2.jpg" alt="Image 2" class="hidden">
-                    <img src="/staticvicaf/static/img/EMS-3.jpg" alt="Image 3" class="hidden">
-                    <img src="/staticvicaf/static/img/e_mecanica_suelos1.jpg" alt="Image 4" class="hidden">
-                  </div>
-                  <div class="p-4">
-                    <h2 class="text-xl font-bold">Estudio de mecánica de suelos</h2>
-                  </div>
-                </div>
-            </div>
-            <div id="info-3" class="card-info hidden">
-                <h2 class="text-xl font-bold">Information for Card 3</h2>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div class="carousel relative" data-index="0">
-                    <img src="https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Image+1" alt="Image 1">
-                    <img src="https://via.placeholder.com/400x200/00FF00/FFFFFF?text=Image+2" alt="Image 2" class="hidden">
-                    <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Image+3" alt="Image 3" class="hidden">
-                    <img src="https://via.placeholder.com/400x200/FFFF00/FFFFFF?text=Image+4" alt="Image 4" class="hidden">
-                    <img src="https://via.placeholder.com/400x200/FF00FF/FFFFFF?text=Image+5" alt="Image 5" class="hidden">
-                  </div>
-                  <div class="p-4">
-                    <h2 class="text-xl font-bold">Card 3</h2>
-                    <p class="text-gray-600">This is the description for card 3.</p>
-                  </div>
-                </div>
-            </div>
-            <div id="info-4" class="card-info hidden">
-              <h2 class="text-xl font-bold">Information for Card 4</h2>
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="carousel relative" data-index="0">
-                  <img src="https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Image+1" alt="Image 1">
-                  <img src="https://via.placeholder.com/400x200/00FF00/FFFFFF?text=Image+2" alt="Image 2" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Image+3" alt="Image 3" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FFFF00/FFFFFF?text=Image+4" alt="Image 4" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FF00FF/FFFFFF?text=Image+5" alt="Image 5" class="hidden">
-                </div>
-                <div class="p-4">
-                  <h2 class="text-xl font-bold">Card 3</h2>
-                  <p class="text-gray-600">This is the description for card 3.</p>
-                </div>
-              </div>
-            </div>
-            <div id="info-5" class="card-info hidden">
-              <h2 class="text-xl font-bold">Information for Card 5</h2>
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="carousel relative" data-index="0">
-                  <img src="https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Image+1" alt="Image 1">
-                  <img src="https://via.placeholder.com/400x200/00FF00/FFFFFF?text=Image+2" alt="Image 2" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Image+3" alt="Image 3" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FFFF00/FFFFFF?text=Image+4" alt="Image 4" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FF00FF/FFFFFF?text=Image+5" alt="Image 5" class="hidden">
-                </div>
-                <div class="p-4">
-                  <h2 class="text-xl font-bold">Card 5</h2>
-                  <p class="text-gray-600">This is the description for card 3.</p>
-                </div>
-              </div>
-            </div>
-            <div id="info-6" class="card-info hidden">
-              <h2 class="text-xl font-bold">Information for Card 6</h2>
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="carousel relative" data-index="0">
-                  <img src="https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Image+1" alt="Image 1">
-                  <img src="https://via.placeholder.com/400x200/00FF00/FFFFFF?text=Image+2" alt="Image 2" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Image+3" alt="Image 3" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FFFF00/FFFFFF?text=Image+4" alt="Image 4" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FF00FF/FFFFFF?text=Image+5" alt="Image 5" class="hidden">
-                </div>
-                <div class="p-4">
-                  <h2 class="text-xl font-bold">Card 6</h2>
-                  <p class="text-gray-600">This is the description for card 3.</p>
-                </div>
-              </div>
-            </div>
-            <div id="info-7" class="card-info hidden">
-              <h2 class="text-xl font-bold">Information for Card 7</h2>
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="carousel relative" data-index="0">
-                  <img src="https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Image+1" alt="Image 1">
-                  <img src="https://via.placeholder.com/400x200/00FF00/FFFFFF?text=Image+2" alt="Image 2" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/0000FF/FFFFFF?text=Image+3" alt="Image 3" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FFFF00/FFFFFF?text=Image+4" alt="Image 4" class="hidden">
-                  <img src="https://via.placeholder.com/400x200/FF00FF/FFFFFF?text=Image+5" alt="Image 5" class="hidden">
-                </div>
-                <div class="p-4">
-                  <h2 class="text-xl font-bold">Card 3</h2>
-                  <p class="text-gray-600">This is the description for card 3.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Add more info sections as needed -->
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+          <div class="bg-white rounded-lg p-4 w-3/4 md:w-1/2">
+              <h3 id="modalTitle" class="text-xl font-semibold mb-2">Título del Modal</h3>
+              <p id="modalContent" class="mb-4">Descripción relevante del elemento seleccionado.</p>
+              <button id="closeModal" class="bg-red-500 text-white px-4 py-2 rounded">Cerrar</button>
+          </div>
         </div>
-    </div>
 
-    <script src="/staticvicaf/static/js/servicios.js">
-       
-    </script>
+    </main>
+    
 
+    <script src="/staticvicaf/static/js/servicios.js"></script>
 </body>
 </html>
