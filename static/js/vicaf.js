@@ -66,3 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
 function redirectToServicePage(url) {
     window.location.href = url;
 }
+
+let currentIndex1 = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+setInterval(() => {
+    items[currentIndex1].classList.remove('active');
+    currentIndex1 = (currentIndex1 + 1) % totalItems;
+    items[currentIndex1].classList.add('active');
+}, 5000); 

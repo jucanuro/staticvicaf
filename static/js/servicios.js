@@ -93,3 +93,42 @@ document.getElementById('next').addEventListener('click', () => {
 
 // Inicializar con el primer elemento del menú
 updateCarousel(0);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const tooltips = document.querySelectorAll('.tooltip');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // Cierra todos los tooltips abiertos
+            tooltips.forEach(tooltip => tooltip.classList.add('hidden'));
+            
+            // Muestra el tooltip correspondiente
+            const modalId = this.getAttribute('data-modal');
+            const tooltip = document.getElementById(modalId);
+            tooltip.classList.remove('hidden');
+        });
+    });
+
+    // Cerrar tooltip
+    document.querySelectorAll('.close-tooltip').forEach(button => {
+        button.addEventListener('click', function () {
+            this.closest('.tooltip').classList.add('hidden');
+        });
+    });
+});
+
+const menuItems1 = document.querySelectorAll('.menu-item');
+    
+    menuItems1.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove active class from all items
+            menuItems1.forEach(i => i.classList.remove('bg-blue-200', 'border-blue-400'));
+            
+            // Add active class to the clicked item
+            this.classList.add('bg-blue-200', 'border-blue-400');
+        });
+    });
+
+//Imagenes animaciones
+

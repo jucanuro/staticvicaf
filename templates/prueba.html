@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carousel Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .carousel img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/staticvicaf/static/css/servicios.css">
 </head>
-<body class="bg-gray-100 p-8">
+<body class="flex h-screen bg-gray-100">
 
-  <!-- Container for the cards -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-    <!-- Card 1 -->
-    
+    <!-- Menú Lateral -->
+    <aside class="w-1/4 bg-gradient-to-b from-gray-300 to-blue-200 p-4 shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Nuestros Servicios</h2>
+        <ul id="menu" class="space-y-2">
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal1">Control de calidad en obra</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal2">Estudio de mecánica de suelos</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal3">Estudio de canteras</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal4">Evaluación estructural</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal5">Diseño de mezclas para concreto</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal6">Ensayos de laboratorio</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal7">Ensayos químicos</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal8">Ensayos de campo</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal9">Monitoreo ambiental</li>
+            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300" data-modal="modal10">Equipos</li>
+        </ul>
+    </aside>
 
-    <!-- Card 2 -->
-    
+    <!-- Tooltips (Popups) -->
+    <div id="modal1" class="tooltip hidden">
+        <div class="tooltip-content p-4 bg-white shadow-lg border rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-700">Control de calidad en obra</span>
+                <button class="close-tooltip text-red-500">✖</button>
+            </div>
+            <p class="mt-2 text-sm">Descripción del servicio de control de calidad en obra...</p>
+        </div>
+    </div>
 
-    <!-- Card 3 -->
-   
+    <div id="modal2" class="tooltip hidden">
+        <div class="tooltip-content p-4 bg-white shadow-lg border rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-700">Estudio de mecánica de suelos</span>
+                <button class="close-tooltip text-red-500">✖</button>
+            </div>
+            <p class="mt-2 text-sm">Descripción del servicio de estudio de mecánica de suelos...</p>
+        </div>
+    </div>
 
-  </div>
+    <!-- Repite los demás modales según sea necesario -->
 
-  <script>
-    // Function to initialize carousels
-    document.querySelectorAll('.carousel').forEach(carousel => {
-      let currentIndex = 0;
-      const images = carousel.querySelectorAll('img');
+    <!-- Contenedor del Carrusel -->
+    <main class="flex-1 p-4">
+        <div id="carousel" class="relative h-full w-full bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="images" class="flex transition-transform duration-300">
+                <img src="/staticvicaf/static/img/img1.jpeg" alt="Imagen 1" class="carousel-image w-full h-full object-cover">
+                <img src="/staticvicaf/static/img/img2.jpeg" alt="Imagen 2" class="carousel-image w-full h-full object-cover hidden">
+                <img src="/staticvicaf/static/img/img3.jpeg" alt="Imagen 3" class="carousel-image w-full h-full object-cover hidden">
+                <img src="/staticvicaf/static/img/img4.jpeg" alt="Imagen 4" class="carousel-image w-full h-full object-cover hidden">
+            </div>
+            <button id="prev" class="absolute text-sm left-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full w-8 h-8">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Arrow SVG here --></svg>
+            </button>
+            <button id="next" class="absolute text-sm right-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Arrow SVG here --></svg>
+            </button>
+        </div>
+    </main>
 
-      // Rotate images every 3 seconds
-      setInterval(() => {
-        images[currentIndex].classList.add('hidden');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.remove('hidden');
-      }, 3000);
-    });
-  </script>
-
+    <script src="/staticvicaf/static/js/servicios.js"></script>
 </body>
 </html>

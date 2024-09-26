@@ -16,13 +16,33 @@
   transition: transform 0.5s ease;
 }
 
+
+/*
 .carousel-image:hover {
-  transform: scale(1.1); /* Zoom en la imagen */
-}
+  transform: scale(1.1); /* Zoom en la imagen 
+}*/
 .carousel-image {
   transition: transform 0.5s ease;
 }
-
+/*
 .carousel-image:hover {
   transform: scale(1.1);
+}
+*/
+
+.tooltip {
+  position: absolute;
+  left: calc(25% + 10px); /* Ajusta esta posición para que esté justo a la derecha del menú */
+  top: 0;
+  z-index: 10;
+  width: 250px;
+}
+
+.tooltip-content {
+  position: relative;
+  margin-top: 10px;
+}
+
+.close-tooltip {
+  cursor: pointer;
 }

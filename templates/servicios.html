@@ -7,54 +7,111 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/staticvicaf/static/css/servicios.css">
 </head>
-<body class="flex h-screen bg-gray-100">
+<body class="flex h-screen w-full bg-gray-100">
 
     <!-- Menú Lateral -->
-    <aside class="w-1/4 bg-gradient-to-b from-gray-300 to-blue-200 p-4 shadow-lg">
-        <h2 class="text-xl font-semibold mb-4">Nuestros Servicios</h2>
-        <ul id="menu" class="space-y-2">
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Control de calidad en obra</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Estudio de mecánica de suelos</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Estudio de canteras</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Evaluación estructural</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Diseño de mezclas para concreto</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos de laboratorio</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos químicos</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Ensayos de campo</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Monitoreo ambiental</li>
-            <li class="menu-item border border-yellow-600 cursor-pointer p-2 rounded-lg hover:border-2 hover:border-blue-500 transition-all duration-300">Equipos</li>
+    <aside class="w-1/4 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 p-6 shadow-2xl rounded-lg">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900 tracking-tight">Nuestros Servicios</h2>
+        <ul id="menu" class="space-y-4 overflow-y-auto h-full">
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal1">
+                <span class="text-gray-800">Control de calidad en obra</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal2">
+                <span class="text-gray-800">Estudio de mecánica de suelos</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal3">
+                <span class="text-gray-800">Estudio de canteras</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal4">
+                <span class="text-gray-800">Evaluación estructural</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal5">
+                <span class="text-gray-800">Diseño de mezclas para concreto</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal6">
+                <span class="text-gray-800">Ensayos de laboratorio</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal7">
+                <span class="text-gray-800">Ensayos químicos</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal8">
+                <span class="text-gray-800">Ensayos de campo</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal9">
+                <span class="text-gray-800">Monitoreo ambiental</span>
+            </li>
+            <li class="menu-item bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal10">
+                <span class="text-gray-800">Equipos</span>
+            </li>
         </ul>
     </aside>
+    
+    
+    
 
+    <!-- Tooltips (Popups) -->
+    <div id="modal1" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Control de calidad en obra</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <p class="mt-4 text-xs text-gray-700">Descripción del servicio de control de calidad en obra...</p>
+        </div>
+    </div>
+    <div id="modal2" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Estudio de mecánica de suelos</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <p class="mt-4 text-xs text-gray-700">Descripción del servicio de control de calidad en obra...</p>
+        </div>
+    </div>
+    <div id="modal3" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Estudio de canteras</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <p class="mt-4 text-xs text-gray-700">Descripción del servicio de control de calidad en obra...</p>
+        </div>
+    </div>
+    <div id="modal4" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Evaluación estructural</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <p class="mt-4 text-xs text-gray-700">Descripción del servicio de control de calidad en obra...</p>
+        </div>
+    </div>
+
+    
+    
     <!-- Contenedor del Carrusel -->
     <main class="flex-1 p-4">
         <div id="carousel" class="relative h-full w-full bg-white rounded-lg shadow-lg overflow-hidden">
             <div id="images" class="flex transition-transform duration-300">
-                <!-- Imágenes dinámicas, a continuación debes agregar las imágenes adecuadas -->
                 <img src="/staticvicaf/static/img/img1.jpeg" alt="Imagen 1" class="carousel-image w-full h-full object-cover">
                 <img src="/staticvicaf/static/img/img2.jpeg" alt="Imagen 2" class="carousel-image w-full h-full object-cover hidden">
                 <img src="/staticvicaf/static/img/img3.jpeg" alt="Imagen 3" class="carousel-image w-full h-full object-cover hidden">
                 <img src="/staticvicaf/static/img/img4.jpeg" alt="Imagen 4" class="carousel-image w-full h-full object-cover hidden">
             </div>
             <button id="prev" class="absolute text-sm left-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full w-8 h-8">
-              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>            </button>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>            </button>
             <button id="next" class="absolute text-sm right-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full">
-              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
-            </button>
-            <button id="openModal" class="absolute top-4 right-4 bg-blue-600 text-white p-2 rounded-lg">Descripción</button>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>            </button>
         </div>
-
-        <!-- Modal -->
-        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
-          <div class="bg-white rounded-lg p-4 w-3/4 md:w-1/2">
-              <h3 id="modalTitle" class="text-xl font-semibold mb-2">Título del Modal</h3>
-              <p id="modalContent" class="mb-4">Descripción relevante del elemento seleccionado.</p>
-              <button id="closeModal" class="bg-red-500 text-white px-4 py-2 rounded">Cerrar</button>
-          </div>
-        </div>
-
     </main>
-    
 
     <script src="/staticvicaf/static/js/servicios.js"></script>
 </body>
