@@ -20,9 +20,8 @@
 </head>
 <body>
     <div id="header-content" class="w-full">
-      
     </div>
-    <div id="home" class="mx-auto max-w-full">
+    <div id="home" class="mx-auto max-w-full lg:mt-16">
       <div class="bg-gray-50">
           <div class="carousel relative w-full h-screen overflow-hidden">
               <!-- Carousel Items -->
@@ -60,111 +59,106 @@
       </div>
     </div>
     <div class="fixed bottom-4 z-20 right-4">
-      <!-- Botón de WhatsApp -->
-      <a href="https://wa.me/941573750?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20servicios" 
-         target="_blank" rel="noopener noreferrer" 
-         class="flex items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-gray-900 transition-transform transform hover:scale-110">
-          <!-- Icono de WhatsApp -->
-          <svg class="w-8 h-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7c-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9c-36.8-15.9-61.8-51.5-66.9-58.7c-.4-.6-.7-.9-.8-1.1c-2-2.6-16.2-21.5-16.2-41c0-18.4 9-27.9 13.2-32.3c.3-.3 .5-.5 .7-.8c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6 .1c.3 0 .5 0 .8 0c2.3 0 5.2 0 8.1 6.8c1.2 2.9 3 7.3 4.9 11.8c3.3 8 6.7 16.3 7.3 17.6c1 2 1.7 4.3 .3 6.9c-3.4 6.8-6.9 10.4-9.3 13c-3.1 3.2-4.5 4.7-2.3 8.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1c2.8 1.4 4.7 2.3 5.5 3.6c.9 1.9 .9 9.9-2.4 19.1c-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM148.1 393.9L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5c-26.6 0-52.7-6.7-75.8-19.3z"/>
-          </svg>
-      </a>
-  
-      <!-- Chat Interactivo -->
-      <div id="chat" class="hidden fixed bottom-24 right-4 w-80 bg-white rounded-lg shadow-lg p-4">
-          <h2 class="font-bold text-lg text-gray-800 mb-2">Chat con nosotros</h2>
-          <div id="messages" class="overflow-y-auto max-h-32 mb-2">
-              <!-- Mensajes del chat -->
-          </div>
-          <div class="flex">
-              <input type="text" id="messageInput" class="flex-1 ml-4 border border-gray-300 rounded-l-md px-2 py-1" placeholder="Escribe un mensaje...">
-              <button id="sendButton" class="bg-gray-800 text-white rounded-r-md px-4 py-1 hover:bg-gray-900 transition">Enviar</button>
-          </div>
-      </div>
+        <div class="fixed bottom-4 z-20 right-4 flex justify-center items-center">
+            <a href="https://wa.me/1234567890" target="_blank" class="w-16 h-16 rounded-full bg-green-500 flex justify-center items-center hover:bg-green-600">
+              <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.04 1.999c-5.523 0-10 4.477-10 10 0 1.767.463 3.47 1.338 4.98l-1.39 5.071 5.196-1.363c1.449.79 3.081 1.212 4.856 1.212 5.523 0 10-4.477 10-10s-4.477-10-10-10zm0 17.5c-1.553 0-3.064-.405-4.394-1.17l-.314-.177-3.085.81.828-3.028-.195-.314c-.835-1.345-1.276-2.894-1.276-4.46 0-4.408 3.592-8 8-8 4.408 0 8 3.592 8 8s-3.592 8-8 8zm4.5-5.95c-.247-.123-1.462-.722-1.69-.803-.228-.081-.395-.123-.561.123-.164.247-.643.802-.787.967-.145.164-.29.184-.538.062-.247-.123-1.042-.383-1.984-1.222-.733-.653-1.228-1.457-1.372-1.704-.144-.247-.015-.38.108-.503.111-.111.247-.29.37-.436.123-.145.164-.247.247-.41.082-.164.041-.308-.02-.431-.061-.123-.538-1.296-.736-1.773-.194-.477-.391-.412-.561-.42-.145-.007-.308-.009-.472-.009-.164 0-.431.062-.654.308-.223.247-.853.832-.853 2.034 0 1.203.874 2.366.996 2.529.123.164 1.715 2.617 4.158 3.674.58.25 1.031.398 1.382.508.581.184 1.109.158 1.526.096.465-.07 1.462-.597 1.668-1.174.205-.576.205-1.071.144-1.175-.06-.103-.226-.164-.472-.287z"/>
+              </svg>
+            </a>
+          </div>       
     </div>
-  
-    <div id="nosotros" class="mx-auto max-w-full mb-4 lg:mb-0">
-      <div class="container max-w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          <div class="col-span-2 px-4">
-            <div class="mt-6">
-              <h2 class="text-lg mt-6 lg:text-2xl font-bold tracking-tight text-gray-900 text-center">Sobre Nosotros</h2>
-              <p class="mt-6 px-2 lg:px-0 text-xs md:text-sm lg:text-md text-gray-500 text-justify">
-                      GRUPO VICAF brinda servicios de
-                      calidad en la realización de ensayos de
-                      materiales de construcción para
-                      garantizar información válida para la
-                      evaluación del cumplimiento con los
-                      estándares de calidad y seguridad
-                      necesarios para su uso en proyectos de
-                      construcción.
-              </p>
-            </div>
-            <div class="mt-4">
-              <div class="flex">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-600">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Misión</h2>
-                </div>
+    <div id="nosotros" class="mx-auto max-w-full mb-4  lg:mb-0">
+        <div class="container max-w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <div class="col-span-2 px-4">
+              <div class="mt-6">
+                <h2 class="text-lg mt-6 lg:text-2xl font-bold tracking-tight text-gray-900 text-center">Sobre Nosotros</h2>
+                <p class="mt-6 px-2 lg:px-0 text-xs md:text-sm lg:text-md text-gray-500 text-justify">
+                        GRUPO VICAF brinda servicios de
+                        calidad en la realización de ensayos de
+                        materiales de construcción para
+                        garantizar información válida para la
+                        evaluación del cumplimiento con los
+                        estándares de calidad y seguridad
+                        necesarios para su uso en proyectos de
+                        construcción.
+                </p>
               </div>
-              <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
-                Diseñar obras civiles y brindar servicios
-                            complementarios, que garanticen la
-                            seguridad, comodidad y la optimización
-                            de recursos en la ejecución de los
-                            proyectos de nuestros clientes, acorde
-                            con sus necesidades y expectativas.
-              </p>
-            </div>
-            <div class="mt-4">
-              <div class="flex">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-600">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="6" x2="12" y2="12" />
-                    <line x1="6" y1="12" x2="12" y2="12" />
-                    <line x1="12" y1="12" x2="18" y2="12" />
-                    <line x1="12" y1="12" x2="12" y2="18" />
-                  </svg>
+              <div class="mt-4">
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-600">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Misión</h2>
+                  </div>
                 </div>
-                <div>
-                  <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Visión</h2>
-                </div>
+                <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
+                  Diseñar obras civiles y brindar servicios
+                              complementarios, que garanticen la
+                              seguridad, comodidad y la optimización
+                              de recursos en la ejecución de los
+                              proyectos de nuestros clientes, acorde
+                              con sus necesidades y expectativas.
+                </p>
               </div>
-              <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
-                Ser reconocidos en el ámbito regional y
-                        nacional como una empresa que brinda
-                        soluciones tangibles e innovadoras
-                        para los proyectos de nuestros clientes.
-              </p>
-            </div>
-            <div class="mt-4">
-              <div class="flex">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M16.87 3.35A6.002 6.002 0 0012 2a6.002 6.002 0 00-4.87 1.35A4.992 4.992 0 004 6c0 2.21 1.46 4.04 3.5 4.67V18H6v1h12v-1h-1.5v-7.33c2.04-.63 3.5-2.46 3.5-4.67a4.992 4.992 0 00-2.87-2.65zM12 4a4 4 0 014 4c0 1.43-.74 2.68-1.85 3.42-.58-.39-1.23-.69-1.88-.95-.27-.12-.53-.24-.79-.34-.25.1-.51.22-.78.34-.64.28-1.3.58-1.9.92A4.978 4.978 0 018 8a4 4 0 014-4zm-3 14v-2h6v2h-6z" />
-                  </svg>
+              <div class="mt-4">
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-600">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="6" x2="12" y2="12" />
+                      <line x1="6" y1="12" x2="12" y2="12" />
+                      <line x1="12" y1="12" x2="18" y2="12" />
+                      <line x1="12" y1="12" x2="12" y2="18" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Visión</h2>
+                  </div>
                 </div>
-                <div>
-                  <h2 class="ml-4 text-md lg:text-xl font-bold">Lorgos</h2>
-                </div>
+                <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
+                  Ser reconocidos en el ámbito regional y
+                          nacional como una empresa que brinda
+                          soluciones tangibles e innovadoras
+                          para los proyectos de nuestros clientes.
+                </p>
               </div>
-              <ul class="ml-2 list-disc pl-5 shadow-md px-4 py-4">
-                  <li class="ml-2 mb-2 flex items-center">
-                      <div class="flex">
-                        <svg class="h-4 w-4 mt-1 fill-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>                        
-                        <p class="text-gray-600 text-sm text-justify ml-2 mr-2 mb-2">Acreditación</p> 
-                      </div>
-                      <button data-modal="modal1" class="ml-auto mb-2 z-50 text-blue-500 hover:text-blue-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                          <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
-                        </svg>
-                      </button>
-                  </li>
+              <div class="mt-4">
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M16.87 3.35A6.002 6.002 0 0012 2a6.002 6.002 0 00-4.87 1.35A4.992 4.992 0 004 6c0 2.21 1.46 4.04 3.5 4.67V18H6v1h12v-1h-1.5v-7.33c2.04-.63 3.5-2.46 3.5-4.67a4.992 4.992 0 00-2.87-2.65zM12 4a4 4 0 014 4c0 1.43-.74 2.68-1.85 3.42-.58-.39-1.23-.69-1.88-.95-.27-.12-.53-.24-.79-.34-.25.1-.51.22-.78.34-.64.28-1.3.58-1.9.92A4.978 4.978 0 018 8a4 4 0 014-4zm-3 14v-2h6v2h-6z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold">Logros</h2>
+                  </div>
+                </div>
+                <ul class="ml-2 list-disc pl-5 shadow-md px-4 py-4">
+                    <li class="ml-2 mb-2 flex items-center">
+                        <div class="flex">
+                          <svg class="h-4 w-4 mt-1 fill-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>                        
+                          <p class="text-gray-600 text-sm text-justify ml-2 mr-2 mb-2">Acreditación</p> 
+                        </div>
+                        <button data-modal="modal1" class="ml-auto mb-2 z-50 text-blue-500 hover:text-blue-700">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
+                          </svg>
+                        </button>
+                    </li>
+                </ul>
+                <div class="flex mt-4">
+                  <div>
+                    <svg class="w-4 h-4 fill-yellow-600"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z"/></svg>
+                  </div>
+                  <div>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold">Políticas</h2>
+                  </div>
+                </div>
+                <ul class="ml-2 list-disc pl-5 shadow-md px-4 py-4">
                   <li class="mb-2 ml-2 flex items-center">
                     <div class="flex">
                       <svg class="h-4 w-4 mt-1 fill-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>                       
@@ -199,320 +193,276 @@
                     </button>
                   </li>
               </ul>
-              <!-- Modales -->
-              <div>
-                <div id="modal1" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
-                  <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
-                      <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
-                          <i class="fas fa-times"></i>
-                      </button>
-                      <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 1</h3>
-                      <iframe src="pdf1.pdf" class="w-full h-96"></iframe>
+                <!-- Modales -->
+                <div>
+                  <div id="modal1" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
+                    <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
+                        <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 1</h3>
+                        <iframe src="pdf1.pdf" class="w-full h-96"></iframe>
+                    </div>
                   </div>
-                </div>
-                <div id="modal2" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
-                  <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
-                      <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
-                          <i class="fas fa-times"></i>
-                      </button>
-                      <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 2</h3>
-                      <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                  <div id="modal2" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
+                    <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
+                        <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 2</h3>
+                        <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                    </div>
                   </div>
-                </div>
-                <div id="modal3" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
-                  <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
-                      <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
-                          <i class="fas fa-times"></i>
-                      </button>
-                      <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 3</h3>
-                      <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                  <div id="modal3" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
+                    <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
+                        <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 3</h3>
+                        <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                    </div>
                   </div>
-                </div>
-                <div id="modal4" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
-                  <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
-                      <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
-                          <i class="fas fa-times"></i>
-                      </button>
-                      <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 4</h3>
-                      <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                  <div id="modal4" class="modal z-50 fixed inset-0 bg-gray-900 bg-opacity-75 items-center justify-center">
+                    <div class="bg-white p-5 rounded-lg max-w-lg mx-auto">
+                        <button class="modal-close ml-auto text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3 class="text-xl font-semibold mb-4">PDF Subtítulo 4</h3>
+                        <iframe src="pdf2.pdf" class="w-full h-96"></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-span-3">
-            <section class="dark:bg-gray-900">
-              <div class="mx-auto max-w-screen-xl text-center">
-                  <div class="mx-auto mb-1 max-w-screen-sm lg:mb-12">
-                      <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center  py-4 mb-2">Nuestro Equipo</h2>
-                  </div> 
-                  <div class="grid gap-8 lg:gap-10 grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Carmen.png" alt="Bonnie Avatar">
-                          <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                              <a href="#">Carmen Bernui Escobedo</a>
-                          </h3>
-                          <p class="text-xs lg:text-sm">Gerente General</p>
-                          <ul class="flex justify-center mt-4 space-x-4">
+            <div class="col-span-3">
+              <section class="dark:bg-gray-900 hidden lg:block">
+                <div class="mx-auto max-w-screen-xl text-center">
+                    <div class="mx-auto mb-1 max-w-screen-sm lg:mb-12">
+                        <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center  py-4 mb-2">Nuestro Equipo</h2>
+                    </div> 
+                    <div class="grid gap-8 lg:gap-10 grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                            <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Carmen.png' %}" alt="Bonnie Avatar">
+                            <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
+                                <a href="#">Carmen Bernui Escobedo</a>
+                            </h3>
+                            <p class="text-xs lg:text-sm">Gerente General</p>
+                            <ul class="flex justify-center mt-4 space-x-4">
+                                <li>
+                                    <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                      <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                            <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Frank.png' %}" alt="Helene Avatar">
+                            <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
+                                <a href="#">Frank Gonzáles Vásquez</a>
+                            </h3>
+                            <p class="text-xs lg:text-sm">Gerente Operativo</p>
+                            <ul class="flex justify-center mt-4 space-x-4">
                               <li>
-                                  <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                  </a>
+                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
                               </li>
-                              <li>
-                                  <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                  </a>
-                              </li>
-                              <li>
+                                <li>
                                   <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
                                     <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                            <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Raquel.png' %}" alt="Jese Avatar">
+                            <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
+                                <a href="#">Jessica Raquel Riojas Ortiz</a>
+                            </h3>
+                            <p class="text-xs lg:text-sm">Jefe de Laboratorio</p>
+                            <ul class="flex justify-center mt-4 space-x-4">
+                              <li>
+                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
                               </li>
-                          </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Frank.png" alt="Helene Avatar">
+                                <li>
+                                  <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                    <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Romario.png' %}" alt="Bonnie Avatar">
                           <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                              <a href="#">Frank Gonzáles Vásquez</a>
+                              <a href="#">Romario Idrogo Estela</a>
                           </h3>
-                          <p class="text-xs lg:text-sm">Gerente Operativo</p>
+                          <p class="text-xs lg:text-sm">Asistente de Operaciones</p>
                           <ul class="flex justify-center mt-4 space-x-4">
-                              <li>
-                                  <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                  </a>
-                              </li>
+                            <li>
+                              <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
+                            </li>
                               <li>
                                 <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
                                   <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
                               </li>
                           </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Raquel.png" alt="Jese Avatar">
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 fill-red-700 rounded-full" src="{% static 'images/personal/Romario.png' %}" alt="Helene Avatar">
                           <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                              <a href="#">Jessica Raquel Riojas Ortiz</a>
+                              <a href="#">Cristian Valdivia Villanueva</a>
                           </h3>
-                          <p class="text-xs lg:text-sm">Jefe de Laboratorio</p>
+                          <p class="text-xs lg:text-sm">Técnico de Ensayos</p>
                           <ul class="flex justify-center mt-4 space-x-4">
-                              <li>
-                                  <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                  </a>
-                              </li>
+                            <li>
+                              <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
+                            </li>
                               <li>
                                 <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
                                   <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
                               </li>
                           </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                        <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Romario.png" alt="Bonnie Avatar">
-                        <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Romario Idrogo Estela</a>
-                        </h3>
-                        <p class="text-xs lg:text-sm">Asistente de Operaciones</p>
-                        <ul class="flex justify-center mt-4 space-x-4">
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Jhonatan.png' %}" alt="Jese Avatar">
+                          <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Jhonatan Mejía Huamán</a>
+                          </h3>
+                          <p class="text-xs lg:text-sm">Asistente de Ensayos</p>
+                          <ul class="flex justify-center mt-4 space-x-4">
                             <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
+                              <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
                             </li>
+                              <li>
+                                <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                  <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
+                          <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="{% static 'images/personal/Neivar.png' %}" alt="Jese Avatar">
+                          <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
+                              <a href="#">Dennis Heras Valdivia</a>
+                          </h3>
+                          <p class="text-xs lg:text-sm">Asistente de Ensayos</p>
+                          <ul class="flex justify-center mt-4 space-x-4 mb-2">
                             <li>
-                                <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                </a>
+                              <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
                             </li>
-                            <li>
-                              <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                            </li>
-                        </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                        <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 fill-red-700 rounded-full" src="static/img/Frank.png" alt="Helene Avatar">
-                        <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Cristian Valdivia Villanueva</a>
-                        </h3>
-                        <p class="text-xs lg:text-sm">Técnico de Ensayos</p>
-                        <ul class="flex justify-center mt-4 space-x-4">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                              <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                            </li>
-                        </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                        <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Jhonatan.png" alt="Jese Avatar">
-                        <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Jhonatan Mejía Huamán</a>
-                        </h3>
-                        <p class="text-xs lg:text-sm">Asistente de Ensayos</p>
-                        <ul class="flex justify-center mt-4 space-x-4">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                              <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                            </li>
-                        </ul>
-                      </div>
-                      <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                        <img class="mx-auto mb-4 w-20 h-20 lg:w-28 lg:h-28 rounded-full" src="static/img/Neivar.png" alt="Jese Avatar">
-                        <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Dennis Heras Valdivia</a>
-                        </h3>
-                        <p class="text-xs lg:text-sm">Asistente de Ensayos</p>
-                        <ul class="flex justify-center mt-4 space-x-4 mb-2">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                              <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                            </li>
-                        </ul>
-                      </div>
-                  </div>  
-              </div>
-            </section>
+                              <li>
+                                <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                  <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
+                              </li>
+                          </ul>
+                        </div>
+                    </div>  
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
-      </div>  
+        </div>  
     </div>
     <div id="servicios" class="mx-auto bg-gradient-to-r from-slate-50 via-gray-100 to-gray-200 max-w-full">
       <div class="py-8">
-        <div class="mx-auto max-w-full">
-          <div class="mx-auto max-w-2xl mt-2 text-center">
-            <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-blue-950">Nuestros Servicios</h2>
+          <div class="mx-auto max-w-full">
+              <div class="mx-auto max-w-2xl mt-2 text-center">
+                  <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-blue-950">Nuestros Servicios</h2>
+              </div>
+              
+              <!-- Carousel Wrapper -->
+              <div class="relative">
+                  <!-- Left Button -->
+                  <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-800 focus:outline-none z-10">
+                      &#9664;
+                  </button>
+                  
+                  <!-- Carousel Container -->
+                  <div id="carousel" class="mx-auto mt-8 grid grid-cols-3 gap-x-8 gap-y-20 transition-transform duration-500 ease-in-out" style="scroll-snap-type: x mandatory; overflow-x: auto; display: flex;">
+                      <!-- Card 1 -->
+                      <div class="min-w-[calc(100%/3)]">
+                          <article class="flex flex-col items-start justify-between px-6">
+                              <div class="relative w-full">
+                                  <img src="{% static 'images/servicios/CC-1.jpeg' %}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
+                                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
+                              </div>
+                              <div class="max-w-xl card-content">
+                                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
+                                      <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
+                                          <a href="#"><span class="absolute inset-0"></span> Control de calidad en obra </a>
+                                      </h3>
+                                      <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">Garantizamos que los proyectos se completen de manera satisfactoria y cumplan con los estándares de calidad requeridos.</p>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+                      
+                      <!-- Card 2 -->
+                      <div class="min-w-[calc(100%/3)]">
+                          <article class="flex flex-col items-start justify-between px-6">
+                              <div class="relative w-full">
+                                  <img src="{% static 'images/servicios/e_mecanica_suelos1.jpg' %}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
+                                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
+                              </div>
+                              <div class="max-w-xl card-content">
+                                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
+                                      <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
+                                          <a href="#"><span class="absolute inset-0"></span> Estudio de mecánica de suelos </a>
+                                      </h3>
+                                      <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">Optimización de diseño y costos de Cimentación, Previsión de posibles problemas de cimentación a causa de suelos perjudiciales.</p>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+                      
+                      <!-- Card 3 -->
+                      <div class="min-w-[calc(100%/3)]">
+                          <article class="flex flex-col items-start justify-between px-6">
+                              <div class="relative w-full">
+                                  <img src="{% static 'images/servicios/EC-1.jpg' %}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
+                                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
+                              </div>
+                              <div class="max-w-xl card-content">
+                                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
+                                      <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
+                                          <a href="#"><span class="absolute inset-0"></span> Estudio de canteras </a>
+                                      </h3>
+                                      <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">Analizamos los materiales en base a las especificaciones de tu proyecto y en base a normas estandarizadas.</p>
+                                  </div>
+                              </div>
+                          </article>
+                      </div>
+
+                      <div class="min-w-[calc(100%/3)]">
+                        <article class="flex flex-col items-start justify-between px-6">
+                            <div class="relative w-full">
+                                <img src="{% static 'images/servicios/EC-1.jpg' %}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
+                                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
+                            </div>
+                            <div class="max-w-xl card-content">
+                                <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
+                                    <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
+                                        <a href="#"><span class="absolute inset-0"></span> Estudio de canteras </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">Analizamos los materiales en base a las especificaciones de tu proyecto y en base a normas estandarizadas.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                  </div>
+                  
+                  <!-- Right Button -->
+                  <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-800 focus:outline-none z-10">
+                      &#9654;
+                  </button>
+              </div>
           </div>
-          <div class="mx-auto mt-8 grid max-w-full grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            
-            <!-- Card 1 -->
-            <div class="col-span-1">
-              <article class="flex flex-col items-start justify-between px-6">
-                <div class="relative w-full">
-                  <img src="static/img/CC-1.jpeg" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
-                </div>
-                <div class="max-w-xl card card-content">
-                  <div class="mt-8 flex items-center gap-x-4 text-xs">
-                    <p class="text-blue-950 border-t-4 w-20 border-blue-950"></p>
-                    <p class="text-yellow-600 border-t-4 w-20 border-yellow-600"></p>
-                    <p class="text-gray-500 border-t-4 w-20 border-gray-300"></p>
-                  </div>
-                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
-                    <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Control de calidad en obra
-                      </a>
-                    </h3>
-                    <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">
-                      Garantizamos que los proyectos se completen de manera satisfactoria y cumplan con los estándares de calidad requeridos.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="col-span-1">
-              <article class="flex flex-col items-start justify-between px-6">
-                <div class="relative w-full">
-                  <img src="static/img/e_mecanica_suelos1.jpg" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
-                </div>
-                <div class="max-w-xl card card-content">
-                  <div class="mt-8 flex items-center gap-x-4 text-xs">
-                    <p class="text-blue-950 border-t-4 w-20 border-blue-950"></p>
-                    <p class="text-yellow-600 border-t-4 w-20 border-yellow-600"></p>
-                    <p class="text-gray-500 border-t-4 w-20 border-gray-300"></p>
-                  </div>
-                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
-                    <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Estudio de mecánica de suelos
-                      </a>
-                    </h3>
-                    <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">
-                      Optimización de diseño y costos de Cimentación, Previsión de posibles problemas de cimentación a causa de suelos perjudiciales.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="col-span-1">
-              <article class="flex flex-col items-start justify-between px-6">
-                <div class="relative w-full">
-                  <img src="static/img/CC-1.jpeg" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-300"></div>
-                </div>
-                <div class="max-w-xl card card-content">
-                  <div class="mt-8 flex items-center gap-x-4 text-xs">
-                    <p class="text-blue-950 border-t-4 w-20 border-blue-950"></p>
-                    <p class="text-yellow-600 border-t-4 w-20 border-yellow-600"></p>
-                    <p class="text-gray-500 border-t-4 w-20 border-gray-300"></p>
-                  </div>
-                  <div class="group relative shadow-lg px-2 py-2 hover:bg-gray-50 transition-all duration-300 ease-in-out">
-                    <h3 class="mt-6 text-lg font-semibold leading-6 text-blue-950 group-hover:text-amber-600">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Estudio de canteras
-                      </a>
-                    </h3>
-                    <p class="mt-5 line-clamp-3 text-sm text-justify leading-6 text-gray-600">
-                      Analizamos los materiales en base a las especificaciones de tu proyecto y en base a normas estandarizadas.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-    
-            <!-- More posts... -->
-    
-          </div>
-        </div>
       </div>
-    </div>    
+  </div>    
     <div class="flex bg-gray-50 justify-end p-4">
       <a href="templates/servicios.html">
         <button type="button" class="flex items-center text-gray-900 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 hover:bg-gradient-to-r hover:from-amber-400 hover:via-amber-500 hover:to-amber-600 hover:text-white focus:ring-4 focus:ring-amber-300 transition-all duration-300 ease-in-out rounded-full text-xs lg:text-sm px-5 py-2.5 me-2 mb-2 shadow-lg">
@@ -762,7 +712,49 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('carousel');
+        const next = document.getElementById('next');
+        const prev = document.getElementById('prev');
+
+        let scrollAmount = 0;
+
+        next.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: carousel.offsetWidth / 3, // Scroll by one card width
+                behavior: 'smooth'
+            });
+        });
+
+        prev.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -(carousel.offsetWidth / 3), // Scroll by one card width in reverse
+                behavior: 'smooth'
+            });
+        });
+
+        // Optional: Swipe for mobile
+        let startX;
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        carousel.addEventListener('touchmove', (e) => {
+            if (!startX) return;
+            let moveX = e.touches[0].clientX - startX;
+
+            if (moveX > 50) {
+                prev.click();
+                startX = null;
+            } else if (moveX < -50) {
+                next.click();
+                startX = null;
+            }
+        });
+    });
+</script>
 </body>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="static/js/vicaf.js"></script>
